@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #1e293b;
+    background-color: #f8fafc;
+  }
+}
+
+:root {
+  --brand-green: #056839;
+  --brand-green-hover: #034b28;
+  --brand-red: #e31b23;
+  --brand-blue: #0055a5;
+  --brand-yellow: #f59e0b;
+  --brand-pink: #d946ef;
+}
+
+.bg-brand-green {
+  background-color: #056839;
+}
+
+.bg-brand-green-dark {
+  background-color: #034b28;
+}
+
+.text-brand-green {
+  color: #056839;
+}
+
+.border-brand-green {
+  border-color: #056839;
+}
+
+.text-brand-red {
+  color: #e31b23;
+}
+
+.bg-brand-red {
+  background-color: #e31b23;
+}
+
+.text-brand-blue {
+  color: #0055a5;
+}
+
+.bg-brand-blue {
+  background-color: #0055a5;
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
